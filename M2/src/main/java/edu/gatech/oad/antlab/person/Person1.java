@@ -30,8 +30,31 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
+        //Person 1 put your implementation here
+        String str1 = "";
+        String str2 = "";
+        String cat = "";
+        String cat2 = "";
+        String add1 = "";
+        String add2 = "";
+        
+        for (int i = 1; i < input.length(); i++) {
+            cat =  input.substring(0,0);
+            add1 = input.substring(i,i);
+            str1 = str1 + add1;
+        }
+        
+        str1 = str1 + cat;
+        
+        for (int j = 1; j< str1.length(); j++) {
+            cat2 = str1.substring(0,0);
+            add2 = str1.substring(j,j);
+            str2 = str2 + add2;
+        } 
+        
+        str2 = str2 + cat2;
+        
+        return str2;
 	}
 	
 	/**
