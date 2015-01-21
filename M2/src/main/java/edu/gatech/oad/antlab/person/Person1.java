@@ -33,6 +33,7 @@ public class Person1 {
         //Person 1 put your implementation here
         String str1 = "";
         String str2 = "";
+<<<<<<< HEAD
         String cat = "";
         String cat2 = "";
         String add1 = "";
@@ -53,6 +54,16 @@ public class Person1 {
         } 
         
         str2 = str2 + cat2;
+=======
+        
+        //first rotate
+        str1 = input.substring(1, input.length());
+        str1 += input.charAt(0);
+        
+        //second rotate
+        str2 = str1.substring(1, str1.length());
+        str2 += str1. charAt(0);
+>>>>>>> Chelsi
         
         return str2;
 	}
