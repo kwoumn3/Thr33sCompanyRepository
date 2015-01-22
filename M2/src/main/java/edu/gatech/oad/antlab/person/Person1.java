@@ -41,10 +41,7 @@ public class Person1 {
         //second rotate
         str2 = str1.substring(1, str1.length());
         str2 += str1. charAt(0);
-<<<<<<< HEAD
 
-=======
->>>>>>> Chelsi
         
         return str2;
 	}
