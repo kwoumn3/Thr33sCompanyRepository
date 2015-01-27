@@ -1,2 +1,23 @@
 apply plugin: 'java'
-    
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+defaultTasks = ['clean', 'compileTest', 'jar', 'javadoc']
+
+jar {
+	baseName = 'CS2340'
+	appendix = 'M2'
+	version = version
+	manifest {
+		attributes 'Implementation-Title': 'CS2340_Thr33s_Company_M2', 
+		'Implementation-Version' : version, 
+		'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 
+		'Class-Path' : '../../lib/resources.jar',
+		'Created-By' : 'TreSaun Thomas'
+	}
+}
+
+dependencies {
+    compile files('lib/resources.jar')
+}    
