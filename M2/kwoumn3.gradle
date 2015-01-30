@@ -14,7 +14,11 @@ jar {
 		'Implementation-Version' : version, 
 		'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 
 		'Class-Path' : '../../lib/resources.jar',
+<<<<<<< HEAD
 		'Created-By' : 'Kyle Woumn'
+=======
+		'Created-By' : 'TreSaun Thomas'
+>>>>>>> origin/Kyle
 	}
 }
 
