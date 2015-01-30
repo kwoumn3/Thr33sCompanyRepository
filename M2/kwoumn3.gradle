@@ -15,9 +15,13 @@ jar {
 		'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain', 
 		'Class-Path' : '../../lib/resources.jar',
 <<<<<<< HEAD
+<<<<<<< HEAD
 		'Created-By' : 'Kyle Woumn'
 =======
 		'Created-By' : 'TreSaun Thomas'
+>>>>>>> origin/Kyle
+=======
+		'Created-By' : 'Kyle Woumn'
 >>>>>>> origin/Kyle
 	}
 }
