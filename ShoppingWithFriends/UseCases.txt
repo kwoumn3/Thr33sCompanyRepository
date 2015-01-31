@@ -1,0 +1,10 @@
+Login account
+Logout account
+Register account
+Find friends
+Rate friends
+Locate products
+Find Stores
+Register Interest
+Display Friends
+Report Sale
