@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0392b"
+    tools:ignore="Overdraw">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Item Name"
+        android:ems="10"
+        android:id="@+id/saleReportItemName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/btnSaleReportCancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSaleReportSave"
+        android:layout_alignTop="@+id/btnSaleReportCancel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/saleReportPrice"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/saleReportItemName"
+        android:layout_alignLeft="@+id/saleReportItemName"
+        android:layout_alignStart="@+id/saleReportItemName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Save Complete."
+        android:id="@+id/saleReportSaveComplete"
+        android:visibility="invisible"
+        android:layout_below="@+id/saleReportLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Item already registered."
+        android:id="@+id/saleReportItemAlreadyAdded"
+        android:layout_below="@+id/saleReportSaveComplete"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:text="Address"
+        android:id="@+id/saleReportLocation"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/saleReportPrice"
+        android:layout_alignLeft="@+id/saleReportPrice"
+        android:layout_alignStart="@+id/saleReportPrice" />
+</RelativeLayout>
